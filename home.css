@@ -16,7 +16,7 @@ h1{
 
 /*4th sem cse CSS*/
 .head{
-	width:90%;
+	width:95%;
 	margin:auto;
 }
 .header{
@@ -24,8 +24,13 @@ h1{
 	margin:5px;
 	/*border:1px solid black;*/
 }
+.header div{
+	margin-right:;
+	width:30%;
+	display:inline-block;
+	text-align:center;
+}
 .header a{
-	margin-right:15%;
 	text-decoration:none;
 }
 .content{
@@ -41,10 +46,11 @@ h1{
 }
 .ln a:before{
 	content:"\f101";
-	
+	font-family:fontAwesome;
 }
 .ln a{
 	display:block;
+	text-decoration:none;
 }
 .lm{
 	margin:5px;
