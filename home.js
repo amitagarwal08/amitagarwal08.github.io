@@ -40,3 +40,22 @@ function semOutput(){
 		document.getElementById("me").style.display = "block";
 	}
 }
+
+function content_display(x){
+	if(x==0){
+		document.getElementById("ln").style.display = "block";
+		document.getElementById("lm").style.display = "none";
+		document.getElementById("pa").style.display = "none";
+	}
+	else if(x==1){
+		document.getElementById("ln").style.display = "none";
+		document.getElementById("lm").style.display = "block";
+		document.getElementById("pa").style.display = "none";
+	}
+	else if(x==2){
+		document.getElementById("ln").style.display = "none";
+		document.getElementById("lm").style.display = "none";
+		document.getElementById("pa").style.display = "block";
+	}
+	//x.preventDefault();
+}

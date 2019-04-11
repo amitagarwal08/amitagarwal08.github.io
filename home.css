@@ -13,3 +13,46 @@ h1{
 	height:100px;
 	margin-bottom:5px;
 }
+
+/*4th sem cse CSS*/
+.head{
+	width:90%;
+	margin:auto;
+}
+.header{
+	width:100%;
+	margin:5px;
+	/*border:1px solid black;*/
+}
+.header a{
+	margin-right:15%;
+	text-decoration:none;
+}
+.content{
+	margin:5px;
+	height:600px;
+	border:1px solid black;
+	overflow:;
+}
+.ln{
+	margin:5px;
+	height:100px;
+	/*border:1px solid yellow;*/
+}
+.ln a:before{
+	content:"\f101";
+	
+}
+.ln a{
+	display:block;
+}
+.lm{
+	margin:5px;
+	height:100px;
+	/*border:1px solid pink;*/
+}
+.pa{
+	margin:5px;
+	height:100px;
+	/*border:1px solid blue;*/
+}
