@@ -7,7 +7,28 @@ h1{
 	text-align:center;
 }
 
-#home button, #branch button, .cse button, #ce button, #first_yr button{
+#home{
+	text-align:center;
+}
+
+#home button{
+	width:90%;
+	border-radius:10px;
+	height:100px;
+	margin-bottom:5px;
+	background:transparent;
+	transition:0.4s;
+	border:1px solid black;
+	text-align:left;
+	padding:4%;
+}
+
+#home button:hover{
+	background-color:blue;
+	color:white;
+}
+
+#branch button, .cse button, #ce button, #first_yr button{
 	width:100%;
 	border-radius:2px;
 	height:100px;
