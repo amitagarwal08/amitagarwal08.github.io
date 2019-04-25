@@ -29,8 +29,13 @@ function semInput(x){
 function semOutput(){
 	var y = localStorage.getItem("BranchInp");
 	var x = localStorage.getItem("semInp");
-	if(y==1){
-		var sem = document.getElementsByClassName("cse");
+	var sem;
+	if(y==0){
+		sem = document.getElementsByClassName("fst_yr");
+		sem[x].style.display = "block";
+	}
+	else if(y==1){
+		sem = document.getElementsByClassName("cse");
 		sem[x].style.display = "block";
 	}
 	else if(y==2){

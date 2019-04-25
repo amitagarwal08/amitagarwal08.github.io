@@ -6,11 +6,12 @@ body{
 	background-color:#4ABDAC;
 }
 h1{
-	text-align:center;
-	background-color:;
-	color:white;
+	text-align:left;
+	margin-left:5%;
+	color:#BD4A5B;
+	display:inline;
 }
-#home , #branch, .cse{
+#home , #branch, #first_yr, .fst_yr, .cse{
 	text-align:center;
 }
 /*
@@ -18,7 +19,7 @@ h1{
 	content:"\f501";
 	font-family:fontAwesome;
 }*/
-#home button ,#branch button, .cse button{
+#home button ,#branch button, #first_yr button,.fst_yr button,.cse button{
 	width:90%;
 	border-radius:15px;
 	padding:20px;
@@ -30,11 +31,11 @@ h1{
 	color:white;
 }
 
-#home button:hover, #branch button:hover, .cse button:hover{
+#home button:hover, #branch button:hover, #first_yr button:hover,.fst_yr button:hover, .cse button:hover{
 	background-color:#BD4A5B;
 }
 
-#ce button, #first_yr button{
+#ce button{
 	width:100%;
 	border-radius:2px;
 	height:100px;
