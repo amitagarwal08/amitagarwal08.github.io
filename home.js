@@ -117,7 +117,7 @@ function displayBranchHeader(){
 		document.getElementById("branch_display").innerHTML = "Chemical Engineering";
 	}
 	else if(x==7){
-		document.getElementById("branch_display").innerHTML = "Metallurgy Engineering";
+		document.getElementById("branch_display").innerHTML = "Metallurgy & Material Science Engineering";
 	}
 }
 
