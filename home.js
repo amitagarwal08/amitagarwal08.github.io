@@ -39,10 +39,28 @@ function semOutput(){
 		sem[x].style.display = "block";
 	}
 	else if(y==2){
-		document.getElementById("ce").style.display = "block";
+		sem = document.getElementsByClassName("ece");
+		sem[x].style.display = "block";
 	}
 	else if(y==3){
-		document.getElementById("me").style.display = "block";
+		sem = document.getElementsByClassName("ce");
+		sem[x].style.display = "block"; 
+	}
+	else if(y==4){
+		sem = document.getElementsByClassName("me");
+		sem[x].style.display = "block"; 
+	}
+	else if(y==5){
+		sem = document.getElementsByClassName("ee");
+		sem[x].style.display = "block"; 
+	}
+	else if(y==6){
+		sem = document.getElementsByClassName("ch");
+		sem[x].style.display = "block"; 
+	}
+	else if(y==7){
+		sem = document.getElementsByClassName("mt");
+		sem[x].style.display = "block"; 
 	}
 }
 
@@ -72,5 +90,66 @@ function midTerm1(){
 	}
 	else{
 		x[0].style.display = "none";
+	}
+}
+
+function displayBranchHeader(){
+	var x = localStorage.getItem("BranchInp");
+	if(x==0){
+		document.getElementById("branch_display").innerHTML = "First Year";
+	}
+	else if(x==1){
+		document.getElementById("branch_display").innerHTML = "Computer Science and Engineering";
+	}
+	else if(x==2){
+		document.getElementById("branch_display").innerHTML = "Electronics and Communication Engineering";
+	}
+	else if(x==3){
+		document.getElementById("branch_display").innerHTML = "Civil Engineering";
+	}
+	else if(x==4){
+		document.getElementById("branch_display").innerHTML = "Mechanical Engineering";
+	}
+	else if(x==5){
+		document.getElementById("branch_display").innerHTML = "Electrical Engineering";
+	}
+	else if(x==6){
+		document.getElementById("branch_display").innerHTML = "Chemical Engineering";
+	}
+	else if(x==7){
+		document.getElementById("branch_display").innerHTML = "Metallurgy Engineering";
+	}
+}
+
+function displaySemHeader(){
+	var x = localStorage.getItem("semInp");
+	var y = localStorage.getItem("BranchInp");
+	if(y==0){
+		if(x==0){
+			document.getElementById("sem_display").innerHTML = "Physics Semester";
+		}
+		else if(x==1){
+			document.getElementById("sem_display").innerHTML = "Chemistry Semester";
+		}
+	}
+	else{
+		if(x==0){
+			document.getElementById("sem_display").innerHTML = "3rd Semester";
+		}
+		else if(x==1){
+			document.getElementById("sem_display").innerHTML = "4th Semester";
+		}
+		else if(x==2){
+			document.getElementById("sem_display").innerHTML = "5th Semester";
+		}
+		else if(x==3){
+			document.getElementById("sem_display").innerHTML = "6th Semester";
+		}
+		else if(x==4){
+			document.getElementById("sem_display").innerHTML = "7th Semester";
+		}
+		else if(x==5){
+			document.getElementById("sem_display").innerHTML = "8th Semester";
+		}
 	}
 }

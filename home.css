@@ -11,7 +11,18 @@ h1{
 	color:#BD4A5B;
 	display:inline;
 }
-#home , #branch, #first_yr, .fst_yr, .cse{
+#display-page{
+	margin-left:5%;
+	margin-bottom:15px;
+}
+#display-page a{
+	text-decoration:none;
+	color:#BD4A5B;
+}
+#display-page a:hover{
+	color:white;
+}
+#home , #branch, #first_yr, .fst_yr, .cse,.ece,.ce,.me,.ee,.ch,.mt{
 	text-align:center;
 }
 /*
@@ -19,7 +30,7 @@ h1{
 	content:"\f501";
 	font-family:fontAwesome;
 }*/
-#home button ,#branch button, #first_yr button,.fst_yr button,.cse button{
+#home button ,#branch button, #first_yr button,.fst_yr button,.cse button,.ece button,.ce button,.me button,.ee button,.ch button,.mt button{
 	width:90%;
 	border-radius:15px;
 	padding:20px;
@@ -31,16 +42,10 @@ h1{
 	color:white;
 }
 
-#home button:hover, #branch button:hover, #first_yr button:hover,.fst_yr button:hover, .cse button:hover{
+#home button:hover, #branch button:hover, #first_yr button:hover,.fst_yr button:hover, .cse button:hover,.ece button:hover,.ce button:hover,.me button:hover,.ee button:hover,.ch button:hover,.mt button:hover{
 	background-color:#BD4A5B;
 }
 
-#ce button{
-	width:100%;
-	border-radius:2px;
-	height:100px;
-	margin-bottom:5px;
-}
 
 /*4th sem cse CSS*/
 .head{
