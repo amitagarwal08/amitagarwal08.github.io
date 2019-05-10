@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HandBook</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="home.css">
+	</head>
+	
+	<body>
+		<h1>HandBook</h1>
+		<hr>
+		
+		<div id="display-page">
+			<a href="index.html">Home</a>
+			<i class="fas fa-angle-double-right" style="color:#BD4A5B"></i>
+			<a href="branch_sem.html" id="branch_display"></a>
+			<i class="fas fa-angle-double-right" style="color:#BD4A5B"></i>
+			<a href="sems.html" id="sem_display"></a>
+			<i class="fas fa-angle-double-right" style="color:#BD4A5B"></i>
+			<a href="cse.html" id="sub_display"></a>
+		</div>
+		
+		<!-- Data Structures & Algorithms -->
+		<div class="3rd" id="third" style="display:none;">
+			<button onclick="OnOffFun(0)">Lecture Notes
+				<i class="fas fa-plus" style="float:right;display:;" id="ln0"></i>
+				<i class="fas fa-minus" style="float:right;display:none;" id="ln1"></i>
+				<div id="ln" style="display:none;">
+					<hr>This is a lecture notes
+				</div>
+			</button>
+			<button onclick="OnOffFun(1)">Previous Year Papers
+				<i class="fas fa-plus" style="float:right;display:;" id="pyp0"></i>
+				<i class="fas fa-minus" style="float:right;display:none;" id="pyp1"></i>
+				<div id="pyp" style="display:none;">
+					<hr>This is previous year papers
+				</div>
+			</button>
+			<button onclick="OnOffFun(2)">Lab Materials
+				<i class="fas fa-plus" style="float:right;display:;" id="lm0"></i>
+				<i class="fas fa-minus" style="float:right;display:none;" id="lm1"></i>
+				<div id="lm" style="display:none;">
+					<hr>This is Lab materials
+				</div>
+			</button>
+		</div>
+		
+		<!-- ISC -->
+		<div class="3rd" id="third" style="display:none;">
+			<button onclick="OnOffFun(0)">Lecture Notes
+				<div id="ln" style="display:none;">
+					<hr>This is a lecture notes
+				</div>
+			</button>
+			<button onclick="OnOffFun(1)">Previous Year Papers
+				<div id="ln" style="display:none;">
+					<hr>This is previous year papers
+				</div>
+			</button>
+			<button onclick="OnOffFun(2)">Lab Materials
+				<div id="ln" style="display:none;">
+					<hr>This is Lab materials
+				</div>
+			</button>
+		</div>
+		
+		<!-- PM -->
+		<div class="3rd" id="third" style="display:none;">
+			<button onclick="OnOffFun(0)">Lecture Notes
+				<div id="ln" style="display:none;">
+					<hr>This is a lecture notes
+				</div>
+			</button>
+			<button onclick="OnOffFun(1)">Previous Year Papers
+				<div id="ln" style="display:none;">
+					<hr>This is previous year papers
+				</div>
+			</button>
+			<button onclick="OnOffFun(2)">Lab Materials
+				<div id="ln" style="display:none;">
+					<hr>This is Lab materials
+				</div>
+			</button>
+		</div>
+		
+		<!-- LIC -->
+		<div class="3rd" id="third" style="display:none;">
+			<button onclick="OnOffFun(0)">Lecture Notes
+				<div id="ln" style="display:none;">
+					<hr>This is a lecture notes
+				</div>
+			</button>
+			<button onclick="OnOffFun(1)">Previous Year Papers
+				<div id="ln" style="display:none;">
+					<hr>This is previous year papers
+				</div>
+			</button>
+			<button onclick="OnOffFun(2)">Lab Materials
+				<div id="ln" style="display:none;">
+					<hr>This is Lab materials
+				</div>
+			</button>
+		</div>
+		
+		<!-- DLD -->
+		<div class="3rd" id="third" style="display:none;">
+			<button onclick="OnOffFun(0)">Lecture Notes
+				<div id="ln" style="display:none;">
+					<hr>This is a lecture notes
+				</div>
+			</button>
+			<button onclick="OnOffFun(1)">Previous Year Papers
+				<div id="ln" style="display:none;">
+					<hr>This is previous year papers
+				</div>
+			</button>
+			<button onclick="OnOffFun(2)">Lab Materials
+				<div id="ln" style="display:none;">
+					<hr>This is Lab materials
+				</div>
+			</button>
+		</div>
+		
+		<!-- EC -->
+		<div class="3rd" id="third" style="display:none;">
+			<button onclick="OnOffFun(0)">Lecture Notes
+				<div id="ln" style="display:none;">
+					<hr>This is a lecture notes
+				</div>
+			</button>
+			<button onclick="OnOffFun(1)">Previous Year Papers
+				<div id="ln" style="display:none;">
+					<hr>This is previous year papers
+				</div>
+			</button>
+			<button onclick="OnOffFun(2)">Lab Materials
+				<div id="ln" style="display:none;">
+					<hr>This is Lab materials
+				</div>
+			</button>
+		</div>
+		
+		<!--<div id="result"></div>
+		<script>
+		if (typeof(Storage) !== "undefined") {
+		  // Store
+		  //localStorage.setItem("lastname", "Smith");
+		  // Retrieve
+		  document.getElementById("result").innerHTML = localStorage.getItem("BranchInp");
+		} else {
+		  document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+		}
+		</script>-->
+		
+		<script src="home.js"></script>
+		
+		<script>
+			displayBranchHeader();
+			displaySemHeader();
+			displaySubHeader();
+		</script>
+		
+		
+	</body>
+</html>

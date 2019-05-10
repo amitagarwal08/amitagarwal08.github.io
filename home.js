@@ -153,3 +153,96 @@ function displaySemHeader(){
 		}
 	}
 }
+
+function SubInput(x){
+	if(typeof(Storage) !== "undefined"){
+		localStorage.setItem("subInp",x);
+	}	
+	else{
+		document.getElementById("result").innerHTML = "Sorry"; 
+	}
+}
+/*function semInput(x){
+	if(typeof(Storage) !== "undefined"){
+		localStorage.setItem("semInp",x);
+	}
+	else{
+		document.getElementById("result").innerHTML = "Sorry";
+	}
+}*/
+function displaySubHeader(){
+	var x = localStorage.getItem("semInp");
+	var y = localStorage.getItem("subInp");
+	if(x==0){
+		var z = document.getElementsByClassName("3rd");
+		if(y==0){
+			document.getElementById("sub_display").innerHTML = "Data Structures & Algorithms";
+			z[0].style.display = "block";
+		}
+		else if(y==1){
+			document.getElementById("sub_display").innerHTML = "Introduction to Signals & Communication";
+			z[1].style.display = "block";
+		}
+		else if(y==2){
+			document.getElementById("sub_display").innerHTML = "Programming Methodology";
+			z[2].style.display = "block";
+		}
+		else if(y==3){
+			document.getElementById("sub_display").innerHTML = "Logic in Computing";
+			z[3].style.display = "block";
+		}
+		else if(y==4){
+			document.getElementById("sub_display").innerHTML = "Digital Logic Design";
+			z[4].style.display = "block";
+		}
+		else if(y==5){
+			document.getElementById("sub_display").innerHTML = "Effective Communication";
+			z[5].style.display = "block";
+		}
+	}
+	else{
+		
+	}
+}
+
+function OnOffFun(x){
+	if(x==0){
+		var s = document.getElementById("ln");
+		if(s.style.display=="none"){
+			s.style.display = "block";
+			document.getElementById("ln0").style.display = "none";
+			document.getElementById("ln1").style.display = "block";
+		}
+		else{
+			s.style.display = "none";
+			document.getElementById("ln0").style.display = "block";
+			document.getElementById("ln1").style.display = "none";
+		}
+	}
+	else if(x==1){
+		var s = document.getElementById("pyp");
+		if(s.style.display=="none"){
+			s.style.display = "block";
+			document.getElementById("pyp0").style.display = "none";
+			document.getElementById("pyp1").style.display = "block";
+		}
+		else{
+			s.style.display = "none";
+			document.getElementById("pyp0").style.display = "block";
+			document.getElementById("pyp1").style.display = "none";
+		}
+	}
+	else if(x==2){
+		var s = document.getElementById("lm");
+		if(s.style.display=="none"){
+			s.style.display = "block";
+			document.getElementById("lm0").style.display = "none";
+			document.getElementById("lm1").style.display = "block";
+		}
+		else{
+			s.style.display = "none";
+			document.getElementById("lm0").style.display = "block";
+			document.getElementById("lm1").style.display = "none";
+		}
+	}
+}
