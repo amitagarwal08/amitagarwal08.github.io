@@ -47,11 +47,10 @@ h1{
 }
 
 /* cse.html */
-#third{
-	display:none;
+.third, .fourth{
 	text-align:center;
 }
-#third button{
+.third button, .fourth button{
 	width:90%;
 	border-radius:15px;
 	padding:20px;
@@ -62,9 +61,7 @@ h1{
 	text-align:left;
 	color:white;
 }
-.active{
-	display:none;
-}
+
 
 /*4th sem cse CSS*/
 /*.head{

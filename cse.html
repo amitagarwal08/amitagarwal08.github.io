@@ -22,125 +22,91 @@
 			<a href="cse.html" id="sub_display"></a>
 		</div>
 		
-		<!-- Data Structures & Algorithms -->
-		<div class="3rd" id="third" style="display:none;">
+		<!-- 3rd sem -->
+		<!--<div class="third" style="display:;">
 			<button onclick="OnOffFun(0)">Lecture Notes
-				<i class="fas fa-plus" style="float:right;display:;" id="ln0"></i>
+				<i class="fas fa-plus" style="float:right;" id="ln0"></i>
 				<i class="fas fa-minus" style="float:right;display:none;" id="ln1"></i>
-				<div id="ln" style="display:none;">
-					<hr>This is a lecture notes
+				<div class="ln" style="display:none;">
+					<hr>This is a lecture notes DSA
+				</div>
+				<div class="ln" style="display:none;">
+					<hr>This is a lecture notes ISC
 				</div>
 			</button>
 			<button onclick="OnOffFun(1)">Previous Year Papers
-				<i class="fas fa-plus" style="float:right;display:;" id="pyp0"></i>
+				<i class="fas fa-plus" style="float:right;" id="pyp0"></i>
 				<i class="fas fa-minus" style="float:right;display:none;" id="pyp1"></i>
 				<div id="pyp" style="display:none;">
 					<hr>This is previous year papers
 				</div>
 			</button>
 			<button onclick="OnOffFun(2)">Lab Materials
-				<i class="fas fa-plus" style="float:right;display:;" id="lm0"></i>
+				<i class="fas fa-plus" style="float:right;" id="lm0"></i>
 				<i class="fas fa-minus" style="float:right;display:none;" id="lm1"></i>
 				<div id="lm" style="display:none;">
 					<hr>This is Lab materials
 				</div>
 			</button>
-		</div>
+		</div>-->
 		
-		<!-- ISC -->
-		<div class="3rd" id="third" style="display:none;">
-			<button onclick="OnOffFun(0)">Lecture Notes
-				<div id="ln" style="display:none;">
-					<hr>This is a lecture notes
+		<div class="third">
+			<button onclick="OnOff(0)">
+				Lecture Notes
+				<i class="fas fa-plus" style="float:right;" id="ln0"></i>
+				<i class="fas fa-minus" style="float:right;display:none;" id="ln1"></i>
+				<div id="lec-notes" style="display:none;">
+					<div style="display:none;" id="ln" class="ln">
+						<hr>This is Lecture notes DSA
+					</div>
+					<div style="display:none;" id="ln" class="ln">
+						<hr>This is Lecture notes ISC
+					</div>
 				</div>
 			</button>
-			<button onclick="OnOffFun(1)">Previous Year Papers
-				<div id="ln" style="display:none;">
-					<hr>This is previous year papers
+			<button onclick="OnOff(1)" >
+				Previous Year Papers
+				<i class="fas fa-plus" style="float:right;" id="pyp0"></i>
+				<i class="fas fa-minus" style="float:right;display:none;" id="pyp1"></i>
+				<div id="pre-yr-paper" style="display:none;">
+					<div style="display:none;" id="pyp" class="pyp">
+						<hr>This is Previous year papers
+					</div>
 				</div>
 			</button>
-			<button onclick="OnOffFun(2)">Lab Materials
-				<div id="ln" style="display:none;">
-					<hr>This is Lab materials
-				</div>
-			</button>
-		</div>
-		
-		<!-- PM -->
-		<div class="3rd" id="third" style="display:none;">
-			<button onclick="OnOffFun(0)">Lecture Notes
-				<div id="ln" style="display:none;">
-					<hr>This is a lecture notes
-				</div>
-			</button>
-			<button onclick="OnOffFun(1)">Previous Year Papers
-				<div id="ln" style="display:none;">
-					<hr>This is previous year papers
-				</div>
-			</button>
-			<button onclick="OnOffFun(2)">Lab Materials
-				<div id="ln" style="display:none;">
-					<hr>This is Lab materials
-				</div>
-			</button>
-		</div>
-		
-		<!-- LIC -->
-		<div class="3rd" id="third" style="display:none;">
-			<button onclick="OnOffFun(0)">Lecture Notes
-				<div id="ln" style="display:none;">
-					<hr>This is a lecture notes
-				</div>
-			</button>
-			<button onclick="OnOffFun(1)">Previous Year Papers
-				<div id="ln" style="display:none;">
-					<hr>This is previous year papers
-				</div>
-			</button>
-			<button onclick="OnOffFun(2)">Lab Materials
-				<div id="ln" style="display:none;">
-					<hr>This is Lab materials
+			<button onclick="OnOff(2)" >
+				Lab Materials
+				<i class="fas fa-plus" style="float:right;" id="lm0"></i>
+				<i class="fas fa-minus" style="float:right;display:none;" id="lm1"></i>
+				<div id="lab-mat" style="display:none;">
+					<div style="display:none;" id="lm"  class="lm">
+						<hr>This is lab materials
+					</div>
 				</div>
 			</button>
 		</div>
-		
-		<!-- DLD -->
-		<div class="3rd" id="third" style="display:none;">
-			<button onclick="OnOffFun(0)">Lecture Notes
-				<div id="ln" style="display:none;">
-					<hr>This is a lecture notes
+		<!--
+		<div class="third">
+			<button onclick="OnOff(0)">
+				Lecture Notes
+				<div style="display:none;" id="ln">
+					<hr>This is Lecture notes ISC
 				</div>
 			</button>
-			<button onclick="OnOffFun(1)">Previous Year Papers
-				<div id="ln" style="display:none;">
-					<hr>This is previous year papers
+			<button onclick="OnOff(1)" >
+				Previous Year Papers
+				<div style="display:none;" id="pyp">
+					<hr>This is Previous year papers
 				</div>
 			</button>
-			<button onclick="OnOffFun(2)">Lab Materials
-				<div id="ln" style="display:none;">
-					<hr>This is Lab materials
-				</div>
-			</button>
-		</div>
-		
-		<!-- EC -->
-		<div class="3rd" id="third" style="display:none;">
-			<button onclick="OnOffFun(0)">Lecture Notes
-				<div id="ln" style="display:none;">
-					<hr>This is a lecture notes
-				</div>
-			</button>
-			<button onclick="OnOffFun(1)">Previous Year Papers
-				<div id="ln" style="display:none;">
-					<hr>This is previous year papers
-				</div>
-			</button>
-			<button onclick="OnOffFun(2)">Lab Materials
-				<div id="ln" style="display:none;">
-					<hr>This is Lab materials
+			<button onclick="OnOff(2)" >
+				Lab Materials
+				<div style="display:none;" id="lm">
+					<hr>This is lab materials
 				</div>
 			</button>
 		</div>
+		-->
 		
 		<!--<div id="result"></div>
 		<script>
